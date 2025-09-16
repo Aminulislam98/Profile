@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.profile-card {
+  display: flex;
+  max-width: 370px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-image: url("IMG_3421.jpeg");
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #0e4bf1c5;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-buttons .media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  padding: 3px;
+}
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color: #0e4bf1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.buttons button:hover {
+  background-color: #0e4bf1c5;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analytics .data {
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  padding: 0 40px;
+  font-weight: bold;
+}
+.data span {
+  margin-top: -1px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.border {
+  border-right: 2px solid #e7e7e7;
+}
+.analytics .like-icon {
+  margin-top: -1px;
+  height: 16px;
+  width: 16px;
+}
+.data img {
+  cursor: pointer;
+}
